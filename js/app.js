@@ -9,7 +9,7 @@ $('.create').click(function () {
 });
 $("input[name=todo-list]").keyup(function (event) {
 	if (event.keyCode == 13) {
-		$("create").click();
+		$(".create").click();
 	}
 });
 
