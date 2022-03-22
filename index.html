@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>To-Do List</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style/hover.css">
+		<link rel="stylesheet" href="style/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h2>TO DO LIST</h2>
+				<div class="create-todo">
+					<form name="toDoList">
+						<input type="text" name="todo-list" placeholder="Add new to do..." class="todoinput">
+					</form>
+					<button class="create"><i class="fa fa-plus" style="color: #fff;"></i></button>
+				</div>
+			</div>
+			<div class="body-content">
+				<ul>
+					<li>
+						<span class="left"><i class="fa fa-trash"></i></span> 
+						<span class="text">Create composer project</span>
+						<span class="right"><i class="fa fa-pencil"></i></span>
+					</li>
+					<li>
+						<span class="left"><i class="fa fa-trash"></i></span> 
+						<span class="text">Publish to GitLab serve</span>
+						<span class="right"><i class="fa fa-pencil"></i></span>
+					</li>
+					<li>
+						<span class="left"><i class="fa fa-trash"></i></span> 
+						<span class="text">Install in difference project</span>
+						<span class="right"><i class="fa fa-pencil"></i></span>
+					</li>
+					<li>
+						<span class="left"><i class="fa fa-trash"></i></span> 
+						<span class="text">Make the document</span>
+						<span class="right"><i class="fa fa-pencil"></i></span>
+					</li>
+				</ul>
+				<p class="error">Oop! you have nothing to do😴. Please add new to do!!!</p>
+				<button id="clear" class="hvr-grow">Clear all</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>

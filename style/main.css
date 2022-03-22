@@ -1,0 +1,146 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  height: 85vh;
+  font-family: sans-serif;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+h3 {
+  text-align: center;
+  color: #cfd60a;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.header {
+  width: 400px;
+  margin: 100px auto;
+}
+
+.body-content {
+  width: 400px;
+  height: auto;
+  margin: 100px auto;
+  padding: 10px;
+  margin-top: -5%;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px 8px rgba(0, 0, 0, 0.083);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  position: relative;
+}
+
+li {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  color: #000;
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  margin: 7px;
+  margin-left: -0.3%;
+}
+
+.left {
+  background: #e74c3c;
+  height: 40px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  width: 0;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+.right {
+  background: #3cabe7;
+  height: 40px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  width: 0;
+  opacity: 0;
+  transition: 0.2s linear;
+  position: absolute;
+  right: 0px;
+  margin-right: 1.5%;
+}
+
+li:hover span {
+  width: 35px;
+  opacity: 1;
+}
+
+.create-todo {
+  display: flex;
+}
+
+.todoinput {
+  width: 146%;
+  height: 40px;
+  font-size: 18px;
+  padding: 10px 10px 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.create {
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  width: 45px;
+  margin-left: 28%;
+  background: rgb(255, 73, 73);
+}
+
+.editinput {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.completed {
+  text-decoration: line-through solid red;
+  color: rgb(0, 0, 0);
+}
+
+.error {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 62, 62);
+}
+
+#clear {
+  width: 70px;
+  height: 28px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin-left: 80%;
+  background: rgb(255, 73, 73);
+}
