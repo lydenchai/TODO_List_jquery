@@ -8,11 +8,6 @@ body {
   background-size: cover;
 }
 
-h3 {
-  text-align: center;
-  color: #cfd60a;
-}
-
 h2 {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -140,6 +135,17 @@ li:hover span {
   border: none;
   outline: none;
   border-radius: 3px;
-  margin-left: 80%;
+  margin-left: -11%;
   background: rgb(255, 73, 73);
+}
+
+.sum-a-btn{
+  width: 100%;
+  display: flex;
+}
+
+.sum{
+  font-weight: bold;
+  width: 90%;
+  margin-left: 1%;
 }

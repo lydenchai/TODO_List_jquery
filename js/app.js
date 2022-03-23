@@ -1,3 +1,4 @@
+
 // Create to do
 $('.create').click(function () {
 	$('input[name=todo-list]').val();
@@ -5,7 +6,9 @@ $('.create').click(function () {
 	$("ul").prepend("<li><span class='left'><i class='fa fa-trash'></i></span> <span class='text'> " + $('input[name=todo-list]').val() + " </span><span class='right'><i class='fa fa-pencil'></li>");
 	$(".error").css("display", "none");
 	$("#clear").css("display", "block");
+	$(".sum").css("display", "block")
 	$('input[name=todo-list]').val("");
+	sumToDo += 1;
 });
 $("input[name=todo-list]").keyup(function (event) {
 	if (event.keyCode == 13) {
@@ -45,14 +48,28 @@ $("ul").on("click", "span.left", function (event) {
 		alert("The task was deleted.");
 	});
 	event.stopPropagation();
+	sumToDo -= 1;
 });
 
 // Delete all to do 
 $("#clear").on("click", function (event) {
-	$("li").fadeOut(500, function () {
-		$("li").remove();
+	$("li").remove().fadeOut(500, function () {
 		$(".error").css("display", "block");
-		$("#clear").css("display", "none");
 	});
+	$("#clear").css("display", "none");
+	$(".sum").css("display", "none")
 	event.stopPropagation();
+});
+
+// Sum to do
+$(".body-content").each(function () {
+	var sumToDo = [];
+	($("li")).each(function () {
+		sumToDo += 1;
+	});
+	if (sumToDo == 1) {
+		$(".sum").append().text("You have " + sumToDo.length + " task to do.");
+	} else {
+		$(".sum").append().text("You have " + sumToDo.length + " tasks to do.");
+	}
 });
