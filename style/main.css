@@ -79,6 +79,10 @@ li {
   margin-right: 1.5%;
 }
 
+li:hover{
+  background: rgb(228, 221, 221);
+}
+
 li:hover span {
   width: 35px;
   opacity: 1;
